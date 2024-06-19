@@ -2,6 +2,78 @@
         body {
             height: 100vh;
             margin: 0;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            margin: auto;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            align-items: left;
+            box-shadow: none;
+            border-radius: 0%;
+            max-width: 48%
+        }
+
+        .video-player {
+            max-width: 48%;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        .plyr {
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media (max-width: 992px) {
+
+            .video-player {
+                max-width: 80%;
+                margin: auto;
+            }
+
+            .card {
+                align-items: left;
+                box-shadow: none;
+                border-radius: 0%;
+                max-width: 80%
+            }
+
+            .navbar {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    </style>
+<style>
+        body {
+            height: 100vh;
+            margin: 0;
 
         }
 
