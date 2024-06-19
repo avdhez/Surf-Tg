@@ -1,4 +1,66 @@
+<style>
+        body {
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
 
+        }
+
+        .container {
+            margin: auto;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            align-items: left;
+            box-shadow: none;
+            border-radius: 0%;
+            max-width: 48%
+        }
+
+        /* For WebKit browsers (Chrome, Safari, etc.) */
+        /* Track */
+        ::-webkit-scrollbar {
+            width: 5px;
+            /* Set the width of the scrollbar */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            /* Color of the scrollbar handle */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            /* Color of the scrollbar handle on hover */
+        }
+
+        @media (max-width: 992px) {
+            .card {
+                align-items: left;
+                box-shadow: none;
+                border-radius: 0%;
+                max-width: 80%
+            }
+
+            .navbar {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    </style>
     a {
         text-decoration: none;
     }
