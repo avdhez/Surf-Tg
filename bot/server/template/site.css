@@ -1,4 +1,18 @@
-
+        
+        .error {
+  position: fixed; /* Makes it float above other content */
+  top: 50%; /* Distance from the top */
+  background-color: red; /* Light red background for error */
+  color: black; /* Dark red text color */
+  padding: 15px; /* Add some padding */
+  border: 1px solid #f5c6cb; /* Red border */
+  border-radius: 5px; /* Rounded corners
+width: 100%;
+  box-shadow: 0 0 20px red; /* Subtle shadow */
+  z-index: 1000; /* Ensures it stays on top of other elements */
+  font-family: Alata; /* Clean font */
+  font-size: 16px;/
+}
    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
    
         body {
