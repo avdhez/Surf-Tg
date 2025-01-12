@@ -7,95 +7,90 @@
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/weebzone/weebzone/data/Surf-TG/src/ico2.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/weebzone/weebzone/data/Surf-TG/src/ico2.png"
         type="image/x-icon">
-    <title>Surf-TG: Login</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/<!-- Theme -->/bootstrap.min.css">
-    <style>
-        body {
-            height: 100vh;
-            margin: 0;
-
-        }
-
-        .container {
-            margin: auto;
-            padding: 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        form {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        button {
-            width: 100%;
-            max-width: 200px;
-            margin-top: 20px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .card {
-            align-items: center;
-        }
-
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    </style>
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/avdhez/Surf-Tg/refs/heads/main/bot/server/template/site.css">
+    <title>AFLIX: Login</title>
+  
 </head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+        body {
+          font-family: Alata;
+  background: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  height: 350px;
+  width: 250px;
+  border: 3px solid red;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0 0 12px red;/* Optional, for visibility */
+}
+        input {
+          font-family: Alata;
+          font-size: 16px;
+          padding-left: 5px;
+          border: 4px solid red;
+          background: black;
+          height: 35px;
+          width: 85%;
+          border-radius: 10px;
+          color: red;
+          outline: none;
+          font-weight: 700;
+        }
+
+        .inputBtn {
+          font-family: Alata;
+          font-size: 20px;
+          font-weight: 700;
+          background: red;
+          border: 4px solid red;
+          width: 89%;
+          height: 45px;
+          color: black;
+          border-radius: 10px;
+          box-shadow: 0 0 10px red;
+        }
+  
+</style>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" style="margin-bottom: 1rem; padding: 10px;">
-        <div class="container" style="align-items: flex-start;">
-            <a class="navbar-brand" style="border: 0px;" href="/">
-                <img src="https://cdn.jsdelivr.net/gh/weebzone/weebzone/data/Surf-TG/src/logo%20(2).png" alt="Logo"
-                    height="45">
-            </a>
-        </div>
-    </nav>
-    <div class="card bg-light mb-3" style="width: fit-content; margin: auto;">
-        <div class="card-header">Welcome To Surf-TG</div>
-    </div>
+<center>
+  
     <div class="container">
         <div class="alert alert-dismissible alert-danger error-popup" id="errorPopup">
             <strong>Oh snap! <!-- Error --></strong>
         </div>
+        
+        <h1 style="text-shadow: 0 0 5px red; color: red; font-weight: 700;">WELCOME TO AFLIX</h1>
+        
+        
         <form id="signinForm" action="/login" method="post">
             <input type="hidden" name="redirect_url" value="{{ redirect_url }}">
-            <fieldset>
+            
                 <div class="inputBox">
-                    <label for="exampleInputUsername" class="form-label mt-4">Username</label>
+                    <label for="exampleInputUsername" class="form">Username</label>
                     <input type="text" class="form-control" id="exampleInputUsername" name="username"
                         placeholder="Enter username">
                 </div>
                 <div class="inputBox">
-                    <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                    <label for="exampleInputPassword1" class="form">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" name="password"
                         placeholder="Password" autocomplete="off">
-                </div>
+                </div><br/>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary inputBox">Submit</button>
+                    <button type="submit" class="inputBtn">SUBMIT</button>
                 </div>
-            </fieldset>
+            
         </form>
     </div>
-
+</center>
 </body>
 <script>
     window.onload = function () {
