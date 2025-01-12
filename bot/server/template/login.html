@@ -66,7 +66,8 @@
   color: black; /* Dark red text color */
   padding: 15px; /* Add some padding */
   border: 1px solid #f5c6cb; /* Red border */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners
+width: 100%;
   box-shadow: 0 0 20px red; /* Subtle shadow */
   z-index: 1000; /* Ensures it stays on top of other elements */
   font-family: Alata; /* Clean font */
@@ -78,9 +79,7 @@
 <center>
   
     <div class="container">
-        <div class="error" id="errorPopup">
-            <strong>Oh snap! <!-- Error --></strong>
-        </div>
+      
         
         <h1 style="text-shadow: 0 0 5px red; color: red; font-weight: 700;">WELCOME TO AFLIX</h1>
         
@@ -103,6 +102,10 @@
                 </div>
             
         </form>
+
+  <div class="error" id="errorPopup">
+            <strong>Oh snap! <!-- Error --></strong>
+        </div>
     </div>
 </center>
 </body>
